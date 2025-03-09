@@ -1,8 +1,36 @@
 body {
 	background: #000;
 }
-#splash-logo-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+#page-container {
+	display: block;
+	width: 800px;
+	margin: 0 auto;
+}
+.splash-logo {
+	display: block;
+}
+.social-link {
+	/* a sprite sheet of our social media icons in a grid of 128x128 pixel icons */
+	background:url('assets/images/social-icons.png');
+	/* clip-path uses radius, but width and height use diameter */ 
+	clip-path: circle(64px);
+	width: 128px;
+	height: 128px;
+	display: inline-block;
+	/* Icon sprites are 128px, so scale down 50% to get 64px */
+	scale: 0.5; 
+	margin: -32px -16px -32px -32px;
+	
+}
+.social-link:hover {
+	filter: grayscale(100%);
+}
+.social-link-facebook {
+	/* Column 0, Row 0 of sprite sheet */
+	background-position: 0px 0px;
+}
+
+.social-link-bluesky {
+	/* Column 1, Row 0 of sprite sheet */
+	background-position: 128px 0px;
 }
