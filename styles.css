@@ -1,14 +1,26 @@
 body {
 	background: #000;
+	color: #fff;
 }
+
+address {
+	margin: 16px;
+}
+
 #page-container {
 	display: block;
-	width: 800px;
-	margin: 0 auto;
+	text-align: center;
 }
-.splash-logo {
+
+#footer-container {
 	display: block;
+	text-align: center;
 }
+
+.splash-logo {
+margin-bottom: 16px;
+}
+
 .social-link {
 	/* a sprite sheet of our social media icons in a grid of 128x128 pixel icons */
 	background:url('assets/images/social-icons.png');
@@ -22,9 +34,11 @@ body {
 	margin: -32px -16px -32px -32px;
 	
 }
+
 .social-link:hover {
 	filter: grayscale(100%);
 }
+
 .social-link-facebook {
 	/* Column 0, Row 0 of sprite sheet */
 	background-position: 0px 0px;
