@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Bellfort";
+  src: url('assets/fonts/bellfort_regular/bellfortregular-webfont.woff2');
+  src: url('assets/fonts/bellfort_regular/bellfortregular-webfont.woff2') format('woff2'),
+       url('assets/fonts/bellfort_regular/bellfortregular-webfont.woff') format('woff');
+}
+
 body {
 	background: #000;
 	color: #fff;
@@ -5,6 +12,11 @@ body {
 
 address {
 	margin: 16px;
+}
+
+h1,h2 {
+	font-family: "Bellfort";
+	color: #feba17;
 }
 
 #page-container {
