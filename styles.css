@@ -1,3 +1,8 @@
+/*
+Bellfort Regular
+Web Font License provided by FontSpring
+License assignee: Arcane Mead & Winery
+*/
 @font-face {
   font-family: "Bellfort";
   src: url('assets/fonts/bellfort_regular/bellfortregular-webfont.woff2');
@@ -5,9 +10,121 @@
        url('assets/fonts/bellfort_regular/bellfortregular-webfont.woff') format('woff');
 }
 
+.bellfort {
+	font-family: "Bellfort";
+}
+
+
+/*
+PIXEL Pattern Square Bold
+Web Font License provided by FontSpring
+License assignee: Arcane Mead & Winery
+*/
+@font-face {
+  font-family: "Pixel";
+  src: url('assets/fonts/pixelpattern_squarebold/pixelpattern-squarebold-webfont.woff2');
+  src: url('assets/fonts/pixelpattern_squarebold/pixelpattern-squarebold-webfont.woff2') format('woff2'),
+       url('assets/fonts/pixelpattern_squarebold/pixelpattern-squarebold-webfont.woff') format('woff');
+}
+
+.pixel {
+	font-family: "Pixel";
+	font-weight: normal;
+}
+
 body {
+	background: #88f;
+	color: #fff;
+	background-image: linear-gradient(45deg, #66f 25%, transparent 25%, transparent 50%, #66f 50%, #66f 75%, transparent 75%, transparent);
+  background-size: 1em 1em;
+}
+
+#page-container {
 	background: #000;
 	color: #fff;
+	width: 70%;
+	margin: 0 auto;
+	border: 1em ridge #999;
+	overflow-x: hidden;
+	white-space: nowrap; 
+	padding: 2em;
+} 
+
+#page-container > .column {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0;
+	padding: 0;
+}
+
+#left_column {
+	width: 25%;
+}
+
+#center_column {
+	width: 50%;
+}
+
+#right_column {
+	width: 25%;
+}
+.column .window {
+	float: left;
+	clear: both;
+}
+
+#right_column .window {
+	float: right;
+	clear: both;
+}
+
+.window {
+	border: 6px ridge #fff;
+	background: #f3f3f3;
+	color: #000;
+	margin-bottom: 2em;
+}
+
+.window:hover {
+	cursor: pointer;
+}
+
+.window .button {
+	border: 2px ridge #fff;
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	padding: 2px;
+	float: right;
+	background: #666;
+	font-fanily: "Pixel";
+}
+
+.window .titlebar {
+	display: block;
+	background: #999;
+	color: #000;
+	height: 1.8em;
+	font-family: "Pixel";
+	border-bottom: 2px solid #000;
+}
+.window .titlebar .title {
+	display: block;
+	font-size: 1.5em;
+}
+
+.window p {
+	text-wrap: pretty;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
 
 address {
@@ -29,8 +146,19 @@ h1,h2 {
 	text-align: center;
 }
 
+#footer-container address {
+	font-family: "Bellfort";
+	font-size: 1.5em;
+	font-style: normal;
+}
+
 .splash-logo {
 margin-bottom: 16px;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .social-link {
@@ -59,4 +187,20 @@ margin-bottom: 16px;
 .social-link-bluesky {
 	/* Column 1, Row 0 of sprite sheet */
 	background-position: 128px 0px;
+}
+
+#hours-operation .closed {
+	color:red;
+}
+#hours-operation table {
+	padding: 1em;
+	font-family: "Pixel";
+	font-size: 1em;
+}
+#hours-operation th {
+	font-weight: normal;
+}
+
+#hours-operation tr:hover {
+	color: #feba17;
 }
