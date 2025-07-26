@@ -36,7 +36,7 @@ body {
 	background: #88f;
 	color: #fff;
 	background-image: linear-gradient(45deg, #66f 25%, transparent 25%, transparent 50%, #66f 50%, #66f 75%, transparent 75%, transparent);
-  background-size: 1em 1em;
+  background-size: 0.5em 0.5em;
 }
 
 #page-container {
@@ -48,34 +48,35 @@ body {
 	overflow-x: hidden;
 	white-space: nowrap; 
 	padding: 2em;
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
 } 
 
 #page-container > .column {
-	display: inline-block;
-	vertical-align: top;
+	display: block;
 	margin: 0;
 	padding: 0;
+	text-align: center;
 }
 
 #left_column {
-	width: 25%;
+/*	background-color: red; */
 }
 
 #center_column {
-	width: 50%;
+/*	background-color: green; */
 }
 
 #right_column {
-	width: 25%;
-}
+/*	background-color: blue; */
+} 
 .column .window {
 	float: left;
-	clear: both;
+
 }
 
 #right_column .window {
 	float: right;
-	clear: both;
 }
 
 .window {
@@ -134,11 +135,6 @@ address {
 h1,h2 {
 	font-family: "Bellfort";
 	color: #feba17;
-}
-
-#page-container {
-	display: block;
-	text-align: center;
 }
 
 #footer-container {
