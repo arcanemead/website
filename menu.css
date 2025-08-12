@@ -25,14 +25,14 @@
 	grid-area: slush;
 }
 .menu-item-wrapper {
-	filter: drop-shadow(0.25em 0.25em 0 rgba(50, 50, 0, 0.5));
+	filter: drop-shadow(0.25rem 0.25rem 0 rgba(50, 50, 0, 0.5));
 }
 .menu-item {
 	clip-path: shape(from 0% 0%,
-		hline to calc(100% - 2em),
-		vline to 1em,
-		hline to calc(100% - 1em),
-		vline to 2em,
+		hline to calc(100% - 2rem),
+		vline to 1rem,
+		hline to calc(100% - 1rem),
+		vline to 2rem,
 		hline to 120%,
 		vline to 120%,
 		hline to 0%,
@@ -40,7 +40,69 @@
 
 	border: none;
 	background-color: red;
-	padding: 0.5em;
-	min-height: 12em;
-	min-width: 10em;
+	padding: 1em;
+	min-height: 12rem;
+	min-width: 10rem;
+
+	display: grid;
+	grid-template-columns: 1fr 8fr 1fr;
+	grid-template-areas:
+	    'name name name'
+	    'main main series'
+	    'abv footer footer';
+}
+
+.menu-item-inside {
+	grid-area: main;
+	clip-path: shape(from 0% 0%,
+		hline to calc(100% - 2rem),
+		vline to 1rem,
+		hline to calc(100% - 1rem),
+		vline to 2rem,
+		hline to 120%,
+		vline to 120%,
+		hline to 0%,
+		close);
+
+	border:  px solid #fff;
+	background-color: #fff;
+	min-height: 12rem;
+	min-width: 10rem;
+	display: block;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.menu-item img {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	left: -35px;
+}
+
+.menu-item-name {
+	grid-area: name;
+	color: #fff;
+	padding : 0.25rem;
+	font-size: 1.5rem;
+}
+
+.menu-item-abv {
+	grid-area: abv;
+	color: #fff;
+	padding : 0.25rem;
+	margin-top: 0.5rem;
+}
+
+.menu-item-series {
+	font-size: 1.5emmmmm;
+	letter-spacing: 2rem;
+	writing-mode: vertical-lr;
+	text-orientation: sideways;
+	transform: rotate(180deg);
+	grid-area: series;
+	color: #fff;
+	padding-right: 1em;
+
+
 }
