@@ -1,0 +1,46 @@
+#page-container {
+	background: white;
+}
+#menu-container {
+	background: white;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-areas:
+	    'cantrip arcana major-arcana slush';
+}
+
+.cantrip {
+	grid-area: cantrip;
+}
+
+.arcana {
+	grid-area: arcana;
+}
+
+/* .major-arcana {
+	grid-area: major-arcana;
+}
+*/
+.slush {
+	grid-area: slush;
+}
+.menu-item-wrapper {
+	filter: drop-shadow(0.25em 0.25em 0 rgba(50, 50, 0, 0.5));
+}
+.menu-item {
+	clip-path: shape(from 0% 0%,
+		hline to calc(100% - 2em),
+		vline to 1em,
+		hline to calc(100% - 1em),
+		vline to 2em,
+		hline to 120%,
+		vline to 120%,
+		hline to 0%,
+		close);
+
+	border: none;
+	background-color: red;
+	padding: 0.5em;
+	min-height: 12em;
+	min-width: 10em;
+}
