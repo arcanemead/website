@@ -45,11 +45,15 @@ body {
 	width: 70%;
 	margin: 0 auto;
 	border: 1em ridge #999;
-	overflow-x: hidden;
+ 	overflow: auto;
 	white-space: nowrap; 
 	padding: 2em;
 	display: grid;
 	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-areas:
+    'header header header'
+    'left main right'
+    'footer footer footer';
 } 
 
 #page-container > .column {
@@ -59,17 +63,26 @@ body {
 	text-align: center;
 }
 
+#top_row {
+	grid-area: header;
+}
+
+#bottom_row {
+	grid-area: footer;
+}
+
 #left_column {
-/*	background-color: red; */
+	grid-area: left;
 }
 
 #center_column {
-/*	background-color: green; */
+	grid-area: main;
 }
 
 #right_column {
-/*	background-color: blue; */
+	grid-area: right;
 } 
+
 .column .window {
 	float: left;
 
