@@ -1,3 +1,8 @@
+:root {
+	--arcane-yellow: #feba17;
+	--arcane-primary: var(--arcane-yellow);
+}
+
 /*
 Bellfort Regular
 Web Font License provided by FontSpring
@@ -147,7 +152,7 @@ address {
 
 h1,h2 {
 	font-family: "Bellfort";
-	color: #feba17;
+	color: var(--arcane-primary);
 }
 
 #footer-container {
@@ -211,5 +216,5 @@ margin-bottom: 16px;
 }
 
 #hours-operation tr:hover {
-	color: #feba17;
+	color: var(--arcane-primary);
 }
