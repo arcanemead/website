@@ -78,6 +78,9 @@
 	margin: 0;
 	padding: 0;
 	position: relative;
+	left: -30px;
+}
+.menu-item img.wide {
 	left: -140px;
 }
 
