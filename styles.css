@@ -60,6 +60,9 @@ body {
     'left main right'
     'footer footer footer';
 } 
+.full-row {
+	grid-column: 1 / -1;
+}
 
 #page-container > .column {
 	display: block;
@@ -68,11 +71,15 @@ body {
 	text-align: center;
 }
 
-#top_row {
+#header-container {
 	grid-area: header;
+	display: grid;
+	grid-template-columns: repeat(8,1fr);
 }
 
-#bottom_row {
+
+
+#footer-container {
 	grid-area: footer;
 }
 
@@ -155,6 +162,11 @@ h1,h2 {
 	color: var(--arcane-primary);
 }
 
+#header-container {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
 #footer-container {
 	display: block;
 	text-align: center;
@@ -217,4 +229,30 @@ margin-bottom: 16px;
 
 #hours-operation tr:hover {
 	color: var(--arcane-primary);
+}
+
+.icon a {
+	color: var(--arcane-primary);
+	text-decoration: none;
+	text-align: center;
+}
+
+.icon a:link {
+
+}
+
+.icon a:visited {
+
+}
+
+.icon a:hover {
+	filter: grayscale(100%);
+}
+
+.icon a:focus {
+	filter: grayscale(100%);
+}
+
+.icon a:active {
+	filter: grayscale(100%);
 }
