@@ -39,11 +39,14 @@ License assignee: Arcane Mead & Winery
 
 body {
 	background: #88f;
+	font-family: "Bellfort";
 	color: #fff;
 	background-image: linear-gradient(45deg, #66f 25%, transparent 25%, transparent 50%, #66f 50%, #66f 75%, transparent 75%, transparent);
   background-size: 0.5em 0.5em;
 }
-
+a, h1, h2, h3, h4, h5, h6 {
+	color: var(--arcane-primary);
+}
 #page-container {
 	background: #000;
 	color: #fff;
@@ -63,6 +66,48 @@ body {
 .full-row {
 	grid-column: 1 / -1;
 }
+
+.fluid-grid {
+	  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: 1fr;
+}
+
+.vertical-center {
+  display: block;
+  position: relative;
+  border: 1px solid #f00;
+}
+
+.fluid-grid a {
+	display: block;
+	color: var(--arcane-primary);
+	text-decoration: none;
+	text-align: center;
+	border: 1px solid #fff;
+	text-wrap: pretty;
+	font-size: 2em;
+	height: 100%;
+	text-align: center;
+}
+.fluid-grid a:link {
+
+}
+.fluid-grid a:visited {
+
+}
+.fluid-grid a:hover {
+
+}
+.fluid-grid a:focus {
+
+}
+.fluid-grid a:active {
+
+}
+
+
 
 #page-container > .column {
 	display: block;
@@ -157,11 +202,6 @@ address {
 	margin: 16px;
 }
 
-h1,h2 {
-	font-family: "Bellfort";
-	color: var(--arcane-primary);
-}
-
 #header-container {
 	text-align: center;
 	margin-bottom: 1em;
@@ -212,7 +252,12 @@ margin-bottom: 16px;
 
 .social-link-bluesky {
 	/* Column 1, Row 0 of sprite sheet */
-	background-position: 128px 0px;
+	background-position: -128px 0px;
+}
+
+.social-link-instagram {
+	/* Column 2, Row 0 of sprite sheet */
+	background-position: -256px 0px;
 }
 
 #hours-operation .closed {
