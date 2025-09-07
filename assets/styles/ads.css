@@ -1,0 +1,93 @@
+:root {
+	--arcane-yellow: #feba17;
+	--arcane-primary: var(--arcane-yellow);
+	--arcane-background: #000000;
+}
+
+/*
+Bellfort Regular
+Web Font License provided by FontSpring
+License assignee: Arcane Mead & Winery
+*/
+@font-face {
+  font-family: "Bellfort";
+  src: url('assets/fonts/bellfort_regular/bellfortregular-webfont.woff2');
+  src: url('assets/fonts/bellfort_regular/bellfortregular-webfont.woff2') format('woff2'),
+       url('assets/fonts/bellfort_regular/bellfortregular-webfont.woff') format('woff');
+}
+
+.bellfort {
+	font-family: "Bellfort";
+}
+
+
+/*
+PIXEL Pattern Square Bold
+Web Font License provided by FontSpring
+License assignee: Arcane Mead & Winery
+*/
+@font-face {
+  font-family: "Pixel";
+  src: url('assets/fonts/pixelpattern_squarebold/pixelpattern-squarebold-webfont.woff2');
+  src: url('assets/fonts/pixelpattern_squarebold/pixelpattern-squarebold-webfont.woff2') format('woff2'),
+       url('assets/fonts/pixelpattern_squarebold/pixelpattern-squarebold-webfont.woff') format('woff');
+}
+
+.pixel {
+	font-family: "Pixel";
+	font-weight: normal;
+}
+
+body {
+	background: var(--arcane-background);
+	cursor: hidden;
+	height: 1920px;
+	width: 1080px;
+}
+a, h1, h2, h3, h4, h5, h6 {
+	color: var(--arcane-primary);
+}
+#ads-container {
+	background: var(--arcane-background);
+	color: #fff;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+ 	overflow: auto;
+	white-space: nowrap; 
+	padding: 0;
+	display: grid;
+	grid-template-rows: 1fr 2fr 1fr;
+	grid-template-areas:
+    'header'
+    'main'
+    'footer';
+} 
+
+#header-container {
+	display: block;
+	width: 100%;
+	grid-area: header;
+}
+
+#main-container {
+	display: block;
+	width: 100%;
+	grid-area: main;
+}
+
+#footer-container {
+	display: block;
+	width: 100%;
+	grid-area: footer;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}

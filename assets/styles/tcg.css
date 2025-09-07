@@ -1,0 +1,100 @@
+/*
+Orbitron
+https://fonts.google.com/specimen/Orbitron
+*/
+@font-face {
+  font-family: "Orbitron";
+  src: url('/assets/fonts/orbitron/static/Orbitron-Regular.ttf');
+}
+
+.orbitron {
+	font-family: "Orbitron";
+}
+
+
+
+.tcg-card {
+	display: grid;
+	gap: 0.25em;
+	grid-template-columns: repeat(5,1fr);
+	grid-template-areas:
+	'tcg-name tcg-name tcg-name tcg-name tcg-name'
+	'tcg-art tcg-art tcg-art tcg-art tcg-art'
+	'tcg-type tcg-type tcg-type tcg-type tcg-type'
+	'tcg-text tcg-text tcg-text tcg-text tcg-text'
+	'tcg-power tcg-power tcg-power tcg-power tcg-power';
+	background: #622;
+	padding: 0.25em;
+	clip-path: inset(0% 0% 0% 0% round 15px);
+	font-family: "Orbitron";
+}
+
+.tcg-name {
+	height: 1em;
+	overflow: hidden;
+  text-overflow: ellipsis;
+	grid-area: tcg-name;
+	font-size: 0.5em;
+	background: #733;
+	width: 100%;
+	clip-path: inset(0% 0% 0% 0% round 15px);
+	text-align: left;
+	padding: 0.25em 0.5em;
+}
+
+.tcg-small-title {
+	height: 1.5em;
+	font-size: 0.35em;
+
+}
+
+.tcg-tiny-title {
+	height: 2em;
+	font-size: 0.25em;
+
+}
+
+.tcg-cost {
+	grid-area: tcg-cost;
+}
+
+.tcg-art {
+	grid-area: tcg-art;
+	text-align: center;
+}
+
+.tcg-art img {
+	width: 100%;
+	clip-path: inset(3% 3% 3% 3% round 15px);
+	margin: -0.25em auto -0.5em;
+}
+
+.tcg-type {
+	grid-area: tcg-type;
+	width: 100%;
+	background: #733;
+	font-size: 0.4em;
+	clip-path: inset(0% 0% 0% 0% round 15px);
+	text-align: left;
+	padding: 0.25em 0.5em;
+}
+
+.tcg-text {
+	height: 8em;
+	overflow: hidden;
+  text-overflow: ellipsis;
+	grid-area: tcg-text;
+	width: 100%;
+	background: #733;
+	font-size: 0.4em;
+	clip-path: inset(0% 0% 0% 0% round 15px);
+	text-align: left;
+	padding: 0.25em 0.5em;
+}
+
+.tcg-power {
+	grid-area: tcg-power;
+	font-size: 0.5em;
+	text-align: right;
+	padding: 0.25em 0.5em;
+}
