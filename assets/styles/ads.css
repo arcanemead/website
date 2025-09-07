@@ -43,6 +43,7 @@ body {
 	cursor: hidden;
 	height: 1920px;
 	width: 1080px;
+	overflow: hidden;
 }
 a, h1, h2, h3, h4, h5, h6 {
 	color: var(--arcane-primary);
@@ -53,11 +54,11 @@ a, h1, h2, h3, h4, h5, h6 {
 	width: 100%;
 	height: 100%;
 	margin: 0;
- 	overflow: auto;
+ 	overflow: hidden;
 	white-space: nowrap; 
 	padding: 0;
 	display: grid;
-	grid-template-rows: 1fr 2fr 1fr;
+	grid-template-rows: 260px 1400px 260px;
 	grid-template-areas:
     'header'
     'main'
@@ -74,6 +75,10 @@ a, h1, h2, h3, h4, h5, h6 {
 	display: block;
 	width: 100%;
 	grid-area: main;
+}
+
+#main-container img {
+	width: 1080px;
 }
 
 #footer-container {
